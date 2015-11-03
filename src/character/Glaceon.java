@@ -16,12 +16,12 @@ public class Glaceon {
 
     public void draw(Graphics graphics) {
         graphics.drawRect(x, y, width, height);
-        graphics.setColor(Color.cyan);
+        graphics.setColor(new Color(176, 226, 255));
         graphics.fillOval(x + (width * 1 / 3), y + (height * 1 / 4), width - (width * 2 / 3), height - (height * 3 / 4));
         graphics.setColor(Color.blue);
         graphics.fillOval(x + (width * 1 / 3), y + (height * 1 / 4), width - (width * 2 / 3), height - (height * 7 / 8));
 
-        graphics.setColor(Color.cyan);
+        graphics.setColor(new Color(176, 226, 255));
         int[] xS = new int[4];
         xS[0] = x + (width / 20);
         xS[1] = x + (width / 10);
@@ -67,7 +67,7 @@ public class Glaceon {
         graphics.fillPolygon(pS, oS, 4);
         
         
-        graphics.setColor(Color.cyan);
+        graphics.setColor(Color.black);
         int[] uS = new int[4];
         uS[0] = x + (width * 50 / 100);
         uS[1] = x + (width * 45 / 100);
@@ -80,6 +80,33 @@ public class Glaceon {
         nS[2] = y + (height * 38 / 100);
         nS[3] = y + (height * 31 / 100);
         graphics.drawPolygon(uS, nS, 4);
+        
+        graphics.setColor(Color.LIGHT_GRAY);
+        int[] hS = new int[3];
+        hS[0] = x + (width * 53 / 100);
+        hS[1] = x + (width * 50 / 100);
+        hS[2] = x + (width * 56 / 100);
+        
+
+        int[] gS = new int[3];
+        gS[0] = y + (height * 27 / 100);
+        gS[1] = y + (height * 24 / 100);
+        gS[2] = y + (height * 24 / 100);
+       
+        graphics.fillPolygon(hS, gS, 3);
+        
+        int[] jS = new int[3];
+        jS[0] = x + (width * 47 / 100);
+        jS[1] = x + (width * 45 / 100);
+        jS[2] = x + (width * 45 / 100);
+        
+
+        int[] kS = new int[3];
+        kS[0] = y + (height * 27 / 100);
+        kS[1] = y + (height * 24 / 100);
+        kS[2] = y + (height * 24 / 100);
+       
+        graphics.fillPolygon(jS, kS, 3);
         
         
         
